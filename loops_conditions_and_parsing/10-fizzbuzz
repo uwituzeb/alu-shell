@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 # display fizz, buzz or fizzbuzz
-i=1
-while [ $i -ne 101 ]
+count=1
+while [ $count -ne 101 ]
 do
-	if [ $((i % 3)) -eq 0 ]
+	if [ $((count % 3)) -eq 0 ]
 	then
 		echo "Fizz"
-	elif [ $((i % 5)) -eq 0 ]
+	elif [ $((count % 5)) -eq 0 ]
 	then
 		echo "Buzz"
-	elif [ $((i % 15)) -eq 0 ]
+	elif [ $((count % 15)) -eq 0 ]
 	then
 		echo "FizzBuzz"
 	else
-		echo $i
+		echo $count
 	fi
-	((i++))
+	((count++))
 done
