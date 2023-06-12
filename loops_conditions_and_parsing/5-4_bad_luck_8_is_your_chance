@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# loops from 1 to 10, displaysbad luck and good luck on 4th and 8th iteration
+# display best schooll 8 times except 4th and 8th iteration
 i=0
 while ((i<10))
 do
@@ -7,11 +7,10 @@ do
 	if [ $i -eq 4 ]
 	then
 		echo "bad luck"
-	elif[ $i -eq 8 ]
+	elif [ $i -eq 8 ]
 	then
 		echo "good luck"
 	else
 		echo "Best School"
-
 	fi
 done
